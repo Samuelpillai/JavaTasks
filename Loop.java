@@ -1,19 +1,17 @@
 package myTaskJavaPackage;
+import java.util.Scanner;
 
 public class Loop {
     public static void main(String[] args) {
-        int a = 50;
 
-        for(int v = 10; v<=a; v++ ) {
-            System.out.println(v);
-        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        int num = sc.nextInt();
 
-        System.out.println("--------------------------------------");
-
-        int v = 10;
-        while(v<=a) {
-            System.out.println(v);
-            v++;
+        if(num>=1) {
+            System.out.println(num +" is Positive");
+        } else {
+            System.out.println(num + " is Negative");
         }
     }
 }
